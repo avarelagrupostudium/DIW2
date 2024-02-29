@@ -1,0 +1,24 @@
+:root {
+    --color-link: #4b33d0; /* Por ejemplo, rojo */
+    font-family: 'Poppins', sans-serif;
+  }
+li .enlacesNav{
+    display: inline;
+    position: relative;
+    text-decoration: none;
+}
+li .enlacesNav:hover::after {
+    width: 100%;
+}
+li .enlacesNav::after{
+    content: "";
+    position: absolute;
+    background: #4b33d0;
+    display: inline-block;
+    width: 0;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
