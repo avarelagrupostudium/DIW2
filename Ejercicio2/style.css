@@ -24,14 +24,23 @@ li .enlacesNav::after{
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
 }
-main .inicio{
+.inicio{
     background-image: var(--fondoMorado);
 }
 div .imagenInicio{
-    
-    vertical-align:bottom;
-    border:0;
+    height: 100%;
+   
 }
-main #prueba{
+#prueba{
     height: 1500px;
 }
+
+/***** breackpoitns *****/ 
+@media  (width <= 575){
+
+}
+@media (width >= 992){
+
+}
+/***** End breackpoitns *****/
+
