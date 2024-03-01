@@ -1,5 +1,6 @@
 :root {
-    --color-link: #4b33d0; /* Por ejemplo, rojo */
+    --color-link: #4b33d0;
+    --fondoMorado :linear-gradient( 135deg, rgb(75, 51, 208) 0%, rgb(98, 58, 162) 100%);
     font-family: 'Poppins', sans-serif;
   }
 li .enlacesNav{ 
@@ -22,4 +23,15 @@ li .enlacesNav::after{
     left: 0;
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0, 0, 0.2, 1);
+}
+main .inicio{
+    background-image: var(--fondoMorado);
+}
+div .imagenInicio{
+    
+    vertical-align:bottom;
+    border:0;
+}
+main #prueba{
+    height: 1500px;
 }
