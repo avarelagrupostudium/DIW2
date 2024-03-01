@@ -2,10 +2,11 @@
     --color-link: #4b33d0; /* Por ejemplo, rojo */
     font-family: 'Poppins', sans-serif;
   }
-li .enlacesNav{
-    display: inline;
+li .enlacesNav{ 
+    display: inline-block;
     position: relative;
     text-decoration: none;
+    
 }
 li .enlacesNav:hover::after {
     width: 100%;
@@ -13,7 +14,7 @@ li .enlacesNav:hover::after {
 li .enlacesNav::after{
     content: "";
     position: absolute;
-    background: #4b33d0;
+    background: var(--color-link);
     display: inline-block;
     width: 0;
     height: 4px;
