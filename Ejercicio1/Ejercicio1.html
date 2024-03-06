@@ -12,6 +12,10 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
     <div class="sticky-top barraNavegacion">
@@ -38,13 +42,13 @@
             >
               <ul class="navbar-nav mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
+                  <a class="nav-link active text-light" aria-current="page" href="#"
                     >Home</a
                   >
                 </li>
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown ">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle text-light"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -76,7 +80,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle text-light"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -93,7 +97,7 @@
                 </li>
                 <li class="nav-item dropdown">
                   <a
-                    class="nav-link dropdown-toggle"
+                    class="nav-link dropdown-toggle text-light text-light"
                     href="#"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -154,9 +158,9 @@
         <div class="row">
           <h2 class="col-12 text-center">Our Speciallization</h2>
         </div>
-        <div class="row">
+        <div class="row gx-md-5">
           <div
-            class="card col-md rounded-0 my-3 mx-3 border-0 cartasSpeciallization"
+            class="card col-md rounded-0 my-3 mx-auto border-0 cartasSpeciallization"
           >
             <div id="cartasContenedorImagen" class="card-img-top">
               <svg
@@ -212,7 +216,7 @@
             <button id="btnCarta">></button>
           </div>
           <div
-            class="card col-md rounded-0 my-3 mx-3 border-0 cartasSpeciallization"
+            class="card col-md rounded-0 my-3 mx-auto border-0 cartasSpeciallization"
           >
             <div id="cartasContenedorImagen" class="card-img-top">
               <svg
@@ -240,7 +244,7 @@
             <button id="btnCarta">></button>
           </div>
           <div
-            class="card col-md rounded-0 my-3 mx-3 border-0 cartasSpeciallization"
+            class="card col-md rounded-0 my-3 mx-auto border-0 cartasSpeciallization"
           >
             <div id="cartasContenedorImagen" class="card-img-top">
               <svg
@@ -462,7 +466,7 @@
         </div>
       </div>
     </div>
-    <div class="fila">
+    <div class="fila galeria container-fluid">
       <div class="container">
         <div class="row">
           <h2 class="text-center mb-5">Our Portfolio</h2>
@@ -556,7 +560,7 @@
         </div>
       </div>
     </div>
-    <div id="seccionNewsletter" class="fila py-5">
+    <div id="seccionNewsletter" class="py-5">
       <div class="container row">
         <h2 class="col-md-6 text-light">
           Subscribe To Our Newsletter For Latest Update Of New Products
@@ -573,21 +577,689 @@
         </div>
       </div>
     </div>
-    <div class="fila">
-      <div class="container">
-        <div class="row">
-          <h2 class="text-center">Our Expertise</h2>
+    <div class="container-fluid py-5 equipo">
+      <div class="row mt-5">
+        <h2 class="text-center">Our Expertise</h2>
+        <div
+          id="carousel"
+          class="carousel slide d-none d-md-block"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators indicadores">
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item p-5">
+              <div class="d-flex">
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic2.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Emily Smith</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic4.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Jenna Smith</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic3.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Blake Run</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic1.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">John Doe</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active p-5">
+              <div class="d-flex">
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic2.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Emily Smith</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic4.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Jenna Smith</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic3.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Blake Run</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic1.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">John Doe</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item p-5">
+              <div class="d-flex">
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic2.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Emily Smith</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic4.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Jenna Smith</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic3.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">Blake Run</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+                <div class="p-4 flex-fill">
+                  <img
+                    src="assets/img/Carruselpic1.jpeg"
+                    class="d-block w-100 imagenCarrusel"
+                    alt="..."
+                  />
+                  <p class="text-center fw-bold fs-2">John Doe</p>
+                  <p class="text-center">Senior Designer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          id="carousel-2"
+          class="carousel slide d-md-none"
+          data-bs-ride="carousel-2"
+        >
+          <div class="carousel-indicators indicadores">
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-2"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active p-5">
+              <img
+                src="assets/img/Carruselpic2.jpeg"
+                class="d-block w-100 imagenCarrusel"
+                alt="..."
+              />
+              <p class="text-center fw-bold fs-2">Emily Smith</p>
+              <p class="text-center">Senior Designer</p>
+            </div>
+
+            <div class="carousel-item p-5">
+              <img
+                src="assets/img/Carruselpic4.jpeg"
+                class="d-block w-100 imagenCarrusel"
+                alt="..."
+              />
+              <p class="text-center fw-bold fs-2">Jenna Smith</p>
+              <p class="text-center">Senior Designer</p>
+            </div>
+
+            <div class="carousel-item p-5">
+              <img
+                src="assets/img/Carruselpic3.jpeg"
+                class="d-block w-100 imagenCarrusel"
+                alt="..."
+              />
+              <p class="text-center fw-bold fs-2">Blake Run</p>
+              <p class="text-center">Senior Designer</p>
+            </div>
+
+            <div class="carousel-item p-5">
+              <img
+                src="assets/img/Carruselpic1.jpeg"
+                class="d-block w-100 imagenCarrusel"
+                alt="..."
+              />
+              <p class="text-center fw-bold fs-2">John Doe</p>
+              <p class="text-center">Senior Designer</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
-    <div class="Fila1"></div>
+    <div class="container-fluid py-5">
+      <div class="row gy-4 p-3 d-md-flex py-5">
+        <div class="tarjetasPlanes rounded-3 shadow col-lg-3 mx-auto">
+          <h5 class="text-center fw-bold pt-5">Basic Plan</h5>
+          <div class="text-center">
+            <img src="assets/img/icon1.png" alt="" />
+          </div>
+          <ul class="text-center pb-5">
+            <li class="py-3 precio">
+              <h6><span class="bold">$49</span>/Month</h6>
+            </li>
+            <li class="py-2">Graphic Design</li>
+            <li class="py-2">Web Design</li>
+            <li class="py-2">UI/UX</li>
+            <li class="py-2">HTML/CSS</li>
+            <li class="py-2">SEO Masrketing</li>
+            <li class="py-2">Business Analysis</li>
+            <li class="botonPlanes py-3">
+              <a href="" class="btn fw-medium" role="button">Start Now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tarjetasPlanes rounded-3 shadow col-lg-3 mx-auto">
+          <h5 class="text-center fw-bold pt-5">Standart Plan</h5>
+          <div class="text-center">
+            <img src="assets/img/icon2.png" alt="" />
+          </div>
+          <ul class="text-center pb-5">
+            <li class="py-3 precio">
+              <h6><span class="bold">$99</span>/Month</h6>
+            </li>
+            <li class="py-2">Graphic Design</li>
+            <li class="py-2">Web Design</li>
+            <li class="py-2">UI/UX</li>
+            <li class="py-2">HTML/CSS</li>
+            <li class="py-2">SEO Masrketing</li>
+            <li class="py-2">Business Analysis</li>
+            <li class="botonPlanes py-3">
+              <a href="" class="btn fw-medium" role="button">Start Now</a>
+            </li>
+          </ul>
+        </div>
+        <div class="tarjetasPlanes rounded-3 shadow col-lg-3 mx-auto">
+          <h5 class="text-center fw-bold pt-5">Premium Plan</h5>
+          <div class="text-center">
+            <img src="assets/img/icon3.png" alt="" />
+          </div>
+          <ul class="text-center pb-5">
+            <li class="py-3 precio">
+              <h6><span class="bold">$149</span>/Month</h6>
+            </li>
+            <li class="py-2">Graphic Design</li>
+            <li class="py-2">Web Design</li>
+            <li class="py-2">UI/UX</li>
+            <li class="py-2">HTML/CSS</li>
+            <li class="py-2">SEO Masrketing</li>
+            <li class="py-2">Business Analysis</li>
+            <li class="botonPlanes py-3">
+              <a href="" class="btn fw-medium" role="button">Start Now</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid review pb-5">
+      <div class="row">
+        <div class="pt-5">
+          <h2 class="text-center">What Our Clients Say’s</h2>
+          <div class="lineaBajoTitulo"></div>
+          <div class="lineaBajoTitulo2"></div>
+        </div>
+        <div
+          id="carousel-3"
+          class="carousel slide col-10 mx-auto pb-5"
+          data-bs-ride="carousel-3"
+        >
+          <div class="carousel-indicators indicadores">
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carousel-3"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active p-5">
+              <div class="d-flex">
+                <div class="col-3 d-flex justify-content-end me-4">
+                  <div class="contenedorImagenReview rounded-circle me-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="iconoImagen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <p>
+                    Nullam et velit mollis, dictum eros a, vehicula turpis.
+                    Aenean feugiat congue faucibus. Nullam dapibus ex ex,
+                    vulputate gravida nisi mattis in. Duis maximus odio sed
+                    turpis vehicula auctor sit amet ut urna. Nam non libero ut
+                    ex fermentum consectetur et in dolor. Morbi tempor gravida
+                    diam nec lacinia. Suspendisse vehicula ultricies arcu.
+                  </p>
+                  <p><span class="lineaNombre"></span>Cak Dikin</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active p-5">
+              <div class="d-flex">
+                <div class="col-3 d-flex justify-content-end me-4">
+                  <div class="contenedorImagenReview2 rounded-circle me-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="iconoImagen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <p>
+                    Nullam et velit mollis, dictum eros a, vehicula turpis.
+                    Aenean feugiat congue faucibus. Nullam dapibus ex ex,
+                    vulputate gravida nisi mattis in. Duis maximus odio sed
+                    turpis vehicula auctor sit amet ut urna. Nam non libero ut
+                    ex fermentum consectetur et in dolor. Morbi tempor gravida
+                    diam nec lacinia. Suspendisse vehicula ultricies arcu.
+                  </p>
+                  <p><span class="lineaNombre"></span>Cak Dikin</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active p-5">
+              <div class="d-flex">
+                <div class="col-3 d-flex justify-content-end me-4">
+                  <div class="contenedorImagenReview rounded-circle me-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="iconoImagen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <p>
+                    Nullam et velit mollis, dictum eros a, vehicula turpis.
+                    Aenean feugiat congue faucibus. Nullam dapibus ex ex,
+                    vulputate gravida nisi mattis in. Duis maximus odio sed
+                    turpis vehicula auctor sit amet ut urna. Nam non libero ut
+                    ex fermentum consectetur et in dolor. Morbi tempor gravida
+                    diam nec lacinia. Suspendisse vehicula ultricies arcu.
+                  </p>
+                  <p><span class="lineaNombre"></span>Cak Dikin</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item active p-5">
+              <div class="d-flex">
+                <div class="col-3 d-flex justify-content-end me-4">
+                  <div class="contenedorImagenReview2 rounded-circle me-0">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="currentColor"
+                      class="iconoImagen"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388q0-.527.062-1.054.093-.558.31-.992t.559-.683q.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 9 7.558V11a1 1 0 0 0 1 1zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612q0-.527.062-1.054.094-.558.31-.992.217-.434.559-.683.34-.279.868-.279V3q-.868 0-1.52.372a3.3 3.3 0 0 0-1.085.992 4.9 4.9 0 0 0-.62 1.458A7.7 7.7 0 0 0 3 7.558V11a1 1 0 0 0 1 1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div class="col-8">
+                  <p>
+                    Nullam et velit mollis, dictum eros a, vehicula turpis.
+                    Aenean feugiat congue faucibus. Nullam dapibus ex ex,
+                    vulputate gravida nisi mattis in. Duis maximus odio sed
+                    turpis vehicula auctor sit amet ut urna. Nam non libero ut
+                    ex fermentum consectetur et in dolor. Morbi tempor gravida
+                    diam nec lacinia. Suspendisse vehicula ultricies arcu.
+                  </p>
+                  <p><span class="lineaNombre"></span>Cak Dikin</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid py-5 blog">
+      <h2 class="text-center">Our Blog & News</h2>
+      <div class="row px-4">
+        <div class="col-12 col-lg-6 mx-auto p-4">
+          <div class="shadow rounded-3 entradaBlog p-4 row ">
+            <div class="col-12 col-md-4">
+              <img class="rounded-3 d-block my-auto w-100" src="assets/img/thum1.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-8 row">
+              <h5 class="fs-4">Vestibulum massa arcu, consectetu pellentesque scelerisque.</h5>
+              <p>
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <ul class="d-flex m-0 p-0">
+                <li class="flex-grow-1">
+                  <i class="bi bi-clock"></i>
+                  7 March, 2020
+                </li>
+                <li class="px-2"><i class="bi bi-chat"></i>15</li>
+                <li><i class="bi bi-share"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mx-auto p-4">
+          <div class="shadow rounded-3 entradaBlog p-4 row ">
+            <div class="col-12 col-md-4">
+              <img class="rounded-3 d-block my-auto w-100" src="assets/img/thum1.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-8 row">
+              <h5 class="fs-4">Vestibulum massa arcu, consectetu pellentesque scelerisque.</h5>
+              <p>
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <ul class="d-flex m-0 p-0">
+                <li class="flex-grow-1">
+                  <i class="bi bi-clock"></i>
+                  7 March, 2020
+                </li>
+                <li class="px-2"><i class="bi bi-chat"></i>15</li>
+                <li><i class="bi bi-share"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mx-auto p-4">
+          <div class="shadow rounded-3 entradaBlog p-4 row ">
+            <div class="col-12 col-md-4">
+              <img class="rounded-3 d-block my-auto w-100" src="assets/img/thum1.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-8 row">
+              <h5 class="fs-4">Vestibulum massa arcu, consectetu pellentesque scelerisque.</h5>
+              <p>
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <ul class="d-flex m-0 p-0">
+                <li class="flex-grow-1">
+                  <i class="bi bi-clock"></i>
+                  7 March, 2020
+                </li>
+                <li class="px-2"><i class="bi bi-chat"></i>15</li>
+                <li><i class="bi bi-share"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-lg-6 mx-auto p-4">
+          <div class="shadow rounded-3 entradaBlog p-4 row ">
+            <div class="col-12 col-md-4">
+              <img class="rounded-3 d-block my-auto w-100" src="assets/img/thum1.jpg" alt="">
+            </div>
+            <div class="col-12 col-md-8 row">
+              <h5 class="fs-4">Vestibulum massa arcu, consectetu pellentesque scelerisque.</h5>
+              <p>
+                Sed quis sagittis velit. Aliquam velit eros, bibendum ut massa et, consequat laoreet erat nam ac imperdiet.
+              </p>
+              <ul class="d-flex m-0 p-0">
+                <li class="flex-grow-1">
+                  <i class="bi bi-clock"></i>
+                  7 March, 2020
+                </li>
+                <li class="px-2"><i class="bi bi-chat"></i>15</li>
+                <li><i class="bi bi-share"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid marcas py-2">
+      <div class="row">
+        <div class="col col-md-3">
+          <div class="p-2">
+            <img class="img-fluid p-5" src="assets/img/logo-blue2.png" alt="">
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="p-2">
+            <img class="img-fluid p-5" src="assets/img/logo-blue3.png" alt="">
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="p-2">
+            <img class="img-fluid p-5" src="assets/img/logo-blue4.png" alt="">
+          </div>
+        </div>
+        <div class="col col-md-3">
+          <div class="p-2">
+            <img class="img-fluid p-5" src="assets/img/logo-blue5.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid contacto">
+      <div class="row p-2 py-5">
+        <div class="col-12 col-lg-6 my-auto">
+          <img class="img-fluid" src="assets/img/img8.png" alt="">
+        </div>
+        <div class="col-12 col-lg-6 p-5 ">
+          <form action="" class="text-center shadow p-5 rounded-3">
+            <h2>Get In Touch With Us</h2>
+            <input value="Full Name" type="text" class="shadow form-control w-100 my-4 d-block p-2">
+            <input value="Email Addres" type="email" class="shadow form-control w-100 my-4 p-2">
+            <input value="Phone No." type="text" class="shadow form-control w-100 my-4 p-2">
+            <input value="Project Tittle" type="text" class="shadow form-control w-100 my-4 p-2">
+            <select class="shadow w-100 my-2 p-2" name="" id="">
+              <option value="">Choose Service</option>
+              <option value="">Choose Service</option>
+              <option value="">Choose Service</option>
+            </select>
+            <textarea class="shadow form-control w-100 my-2" placeholder="Mesage" id="floatingTextarea"></textarea>
+            <a href="" class="btn my-3 w-100 mx-auto">Submit Now</a>
+            
+          </form>  
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid pt-4">
+      <div class="row text-light">
+        <div class="col-lg-4">
+          <div class="py-4">
+            <img src="assets/logo/logo-white.png" alt="">
+          </div>
+          <p>
+            Maecenas pellentesque placerat quam, in finibus nisl tincidunt sed. Aliquam magna augue, malesuada ut feugiat eget, cursus eget felis.
+          </p>
+          <ul class="d-flex my-2">
+            <li class="mx-2"><i class="bi bi-facebook"></i></li>
+            <li class="mx-2"><i class="bi bi-instagram"></i></li>
+            <li class="mx-2"><i class="bi bi-twitter"></i></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="my-2">Our links</h5>
+          <ul>
+            <li>
+              > Home
+            </li>
+            <li>
+              > About Us
+            </li>
+            <li>
+              > Services
+            </li>
+            <li>
+              > Team
+            </li>
+            <li>
+              > Blog
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="my-2">Our Services</h5>
+          <ul>
+            <li>
+              > Strategy & Research
+            </li>
+            <li>
+              > Web Development
+            </li>
+            <li>
+              > Web Solution
+            </li>
+            <li>
+              > Digital Marketing
+            </li>
+            <li>
+              > App Design
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5 class="my-2">Outher links</h5>
+          <ul>
+            <li>
+              > FAQ
+            </li>
+            <li>
+              > Portfolio
+            </li>
+            <li>
+              > Privacy Policy
+            </li>
+            <li>
+              > Terms & Conditions
+            </li>
+            <li>
+              > Support
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h5>Contact Us</h5>
+          <ul>
+            <li><i class="bi bi-telephone-fill me-2"></i>+91 123-456-7890</li>
+            <li><i class="bi bi-envelope me-2"></i>info@example.com</li>
+            <li><i class="bi bi-geo-alt-fill me-2"></i>Marmora Road Chi Minh City, Vietnam</li>
+          </ul>
+        </div>
+        <div class="col-12 py-3 fondo">
+          <p>
+            Copyright © 2021 DexignZone. All rights reserved.
+          </p>
+        </div>
+      </div>
+     
+    </footer>
 
     <!-- JS Boostrap -->
     <script

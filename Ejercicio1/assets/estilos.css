@@ -2,6 +2,10 @@
     --gradient-sec: linear-gradient(90deg,#111c58 0,#5c2782 51%,#111c58);
     --gradient3: linear-gradient(90deg,#ef146e 0,#fea958 51%,#ef146e);
     --gradient: linear-gradient(90deg,#ef146e 0,#fea958 51%,#ef146e);
+    --fondoRosa: #f8f5ff;
+    --textoAzulTitulo: #1f2471;
+    --textoAzul: #505489;
+    --textoNaranja:#f01f75;
 }
 @keyframes updown {
     0% {
@@ -18,7 +22,7 @@
   }
 .fila{
     width: 90%;
-    margin: 150px auto 150px auto;
+    margin: 150px auto 0px auto;
 }
 .bgLogo{
     border-radius: 100%; 
@@ -162,3 +166,180 @@
     width: 90%;
     margin: auto;
  }
+ .galeria{
+    background-color: #f8f5ff;
+ }
+ .equipo{
+    background-color:var(--fondoRosa);
+ }
+ .imagenCarrusel{
+    border-radius: 4rem 0 4rem 4rem;
+    transition: border-radius 0.5s;
+ }
+ .imagenCarrusel:hover{
+    border-radius: 4rem 4rem 4rem 0;
+ }
+ .indicadores button{
+    background-image: var(--gradient);
+    background-size: 200%;
+    border-radius: 12px;
+    width: 8px !important;
+    padding: 2px 10px !important;
+ }
+ div .tarjetasPlanes:hover{
+    background-image: var(--gradient);
+    background-size: 200%;
+ }
+ div .tarjetasPlanes:hover h5{
+    color: white;
+ }
+ div .tarjetasPlanes:hover ul li{
+    color: white;
+ }
+ div .tarjetasPlanes:hover ul li a{
+    color: white;
+ }div .tarjetasPlanes:hover ul li h6{
+    color: white;
+ }
+ div .tarjetasPlanes ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ div .tarjetasPlanes h5{
+    color: var(--textoAzulTitulo);
+    font-size: 32px;
+ }
+ div .tarjetasPlanes ul .precio h6{
+    font-size: 38px;
+    color: var(--textoNaranja);
+ }
+ div .tarjetasPlanes ul li{
+    color: var(--textoAzul);
+ }
+ div .tarjetasPlanes ul li a{
+    color: var(--textoNaranja);
+    padding: 10px 35px 10px 35px;
+    border-radius: 0 1.5rem 0 1.5rem;
+    border: 1px solid var(--textoNaranja);
+    transition: border-radius 0.5s;
+ }
+ div .tarjetasPlanes ul li a:hover{
+    color: #fff;
+    border-radius: 1.5rem 0 1.5rem 0;
+    background-image: var(--gradient);
+    background-size: 200%;
+ }
+ .review{
+    background-color: var(--fondoRosa);
+ }
+ .contenedorImagenReview{
+    width: 150px;
+    height: 150px;
+    background-image: url(../assets/img/reviewpic1.jpeg);
+    background-position: center;
+    position: relative;
+ }
+ .contenedorImagenReview2{
+    width: 150px;
+    height: 150px;
+    background-image: url(../assets/img/reviewpic3.jpeg);
+    background-position: center;
+    position: relative;
+ }
+ .review .iconoImagen{
+    width: auto;
+    height: 5rem;
+    position: absolute;
+    color: var(--textoAzul);
+    bottom: -1.5rem;
+    right: -0.5rem;
+ }
+ .review h2{
+    font-size: 36px;
+    color: var(--textoAzulTitulo);
+ }
+ .lineaNombre{
+    margin-right: 5px;
+    display: inline-block;
+    height: 7px;
+    width: 25px;
+    border-top: 2px solid var(--textoAzul);
+ }
+ .entradaBlog h5{
+    color: var(--textoAzulTitulo);
+ }
+ .entradaBlog p{
+    color: var(--textoAzul);
+ }
+ .entradaBlog ul{
+    list-style-type: none;
+ }
+ .entradaBlog i{
+    color: var(--textoNaranja);
+    font-size: 18px;
+ }
+ .entradaBlog li {
+    color: var(--textoAzul);
+ }
+ .blog h2{
+    font-size: 36px;
+    color: var(--textoAzulTitulo);
+ }
+ .marcas{
+    background-color: var(--fondoRosa);
+ }
+ .marcas div div img:hover{
+    background-color: var(--textoNaranja);
+    border-radius: 10px;
+ }
+ .contacto form input{
+    background-color: #fff;
+    border-radius: 0 1.5rem 0 1.5rem;
+    padding: 6px;
+    margin: auto;
+    border: 0;
+ }
+ .contacto form h2 {
+    font-size: 36px;
+    color: var(--textoAzulTitulo);
+ }
+ .contacto form select{
+    background-color: #fff;
+    border-radius: 0 1.5rem 0 1.5rem;
+    padding: 6px;
+    margin: auto;
+    border: 0;
+ }
+ .contacto form textarea{
+    background-color: #fff;
+    border-radius: 0 1.5rem 0 1.5rem;
+    padding: 6px;
+    margin: auto;
+    height: 150px;
+    border: 0;
+ }
+ .contacto form a{
+    padding: 10px 35px 10px 35px;
+    border-radius: 0 1.5rem 0 1.5rem;
+    color: #fff;
+    margin: 0px 0px 0px 15px;
+    border-color: transparent;
+    background-color: #f01f75;
+    background-image: var(--gradient);
+    background-size: 200%;
+    transition: border-radius 0.5s;
+ }
+ footer{
+    background-image: var(--gradient-sec);
+    
+ }
+ footer div ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+ }
+ footer .fondo{
+    background-color: #111942;
+ }
+ 
